@@ -86,6 +86,44 @@
                         </ul>
                     </div>
                 </div>
+                <div class="container is-max-desktop has-text-centered">
+                    <div class="container" style="overflow:hidden;">
+                        <div id="post_images" class="carousel">
+                            <div id="slider575d0f70-7d20-4f15-b7d9-c7d2d11d35dc" class="slider" tabindex="0">
+                                <div class="slider-container" style="width: 6734px; display: flex;">
+                
+                                    <!-- 轮播项1 -->
+                                    <div class="slider-item is-current" data-slider-index="0" style="width: 481px;">
+                                        <div class="item-1 image-caption-container">
+                                            <div class="caption">
+                                                "A classical Chinese residence, refined and simple, embodying the understated beauty of Eastern culture."
+                                            </div>
+                                        </div>
+                                        <video poster autoplay muted loop style="pointer-events: none; width: 450px;">
+                                            <source src="images\out_ancient1.mp4" type="video/mp4">
+                                        </video>
+                                    </div>
+                
+                                    <!-- 轮播项2 -->
+                                    <div class="slider-item is-slide-previous is-slide-next" data-slider-index="1" style="width: 481px;">
+                                        <div class="item-2 image-caption-container">
+                                            <div class="caption">
+                                                "A Southeast Asian-style bedroom with a bright color scheme."
+                                            </div>
+                                        </div>
+                                        <video poster autoplay muted loop style="pointer-events: none; width: 450px;">
+                                            <source src="images\out_southeast.mp4" type="video/mp4">
+                                        </video>
+                                    </div>
+                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
             </article>
         </div>
 
@@ -101,7 +139,7 @@
                     </div>  
                     <h2>Abstract</h2>
                     <p style="text-align:justify">
-                        We introduce a novel hybrid representation and end-to-end trainable network architecture to model fully editable and customizable neural avatars. At the core of our work lies a representation that combines the modeling power of neural fields with the ease of use and inherent 3D consistency of skinned meshes. To this end, we construct a trainable feature codebook to store local geometry and texture features on the vertices of a deformable body model, thus exploiting its consistent topology under articulation. This representation is then employed in a generative auto-decoder architecture that admits fitting to unseen scans and sampling of realistic avatars with varied appearances and geometries. Furthermore, our representation allows local editing by swapping local features between 3D assets. To verify our method for avatar creation and editing, we contribute a new high-quality dataset, dubbed CustomHumans, for training and evaluation. Our experiments quantitatively and qualitatively show that our method generates diverse detailed avatars and achieves better model fitting performance compared to state-of-the-art methods.
+                        We propose FilmSceneDesigner, a multi-agent procedural modeling framework for generating film scenes with real-world scale. Given the critical role of scene construction in film production, Set-A-Scene simulates the workflow of professional set designers, enabling procedural scene generation directly within SketchUp software, a widely used tool for film set modeling. Our system takes natural language input with scene attributes such as type, historical period, and style, and generates structured modeling parameters through a multi-agent dialogue and collaboration mechanism. The modeling process follows a structured workflow including floorplan and structure generation, material application, door and window placement, and asset retrieval and arrangement. The generated parameters are then executed using a custom-designed SketchUp-based procedural modeling framework. To enhance cinematic realism, we introduce SetDepot-Pro, a large-scale database comprising 7,000 film-specific digital assets and 1,000 materials, addressing the lack of high-quality datasets tailored for film scene construction. The generated scenes can be used to produce construction drawings for on-site set building, concept art for atmospheric visualization and virtual previs. Experimental results demonstrate that our prompt engineering strategy improves agent decision-making. Furthermore, both qualitative evaluations and user studies show that FilmSceneDesigner produces scenes with greater cinematic realism and aesthetic coherence compared to baseline methods.
                     </p>
                 </div>
             </article>
@@ -278,7 +316,7 @@
             <article id="results">
                 <div class="container">
                     <h2>Results</h2>
-                    <h3>Avatar Customzation</h3>
+                    <!-- <h3>Avatar Customzation</h3> -->
                     <div class="row center" style="margin-top: 1em" >
                         <div class="col l4 m6 s12">
                             <video class="video" id="mesh1" loop autoplay muted src="images/out_ancient.mp4" onplay="resizeAndPlay(this)"></video>
